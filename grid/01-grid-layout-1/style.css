@@ -9,6 +9,31 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  grid-template: repeat(7, 15px)/ repeat(7, 15px);
+  grid-template-areas:
+    "header header header header header header header "
+    "sidebar sidebar nav nav nav nav nav "
+    "sidebar sidebar article article  article article article"
+    "sidebar sidebar article article  article article article"
+    "sidebar sidebar article article  article article article"
+    "sidebar sidebar article article  article article article"
+    "footer  footer footer footer footer footer footer ";
+}
+
+#header {
+  grid-area: header;
+}
+#sidebar {
+  grid-area: sidebar;
+}
+#nav {
+  grid-area: nav;
+}
+#article {
+  grid-area: article;
+}
+#footer {
+  grid-area: footer;
 }
 
 .container div {
